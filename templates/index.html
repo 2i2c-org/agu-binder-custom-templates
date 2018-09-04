@@ -3,13 +3,14 @@
 {% block head %}
 <meta id="base-url" data-url="{{base_url}}">
 <script src="{{static_url("dist/bundle.js")}}"></script>
+<link rel="stylesheet" href="{{static_url("pangeo-style.css")}}" type="text/css" media="all">
 {{ super() }}
 {% endblock head %}
 
 {% block main %}
 <div id="main" class="container">
   <div class="row">
-    <h4 class="text-center logo-subtext">(beta)</h4>
+    <!--<h4 class="text-center logo-subtext">(beta)</h4>-->
     <div class="col-lg-10 col-lg-offset-1">
       {% block header %}
       <div id="header" class="text-center">
