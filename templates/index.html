@@ -7,17 +7,18 @@
 <link rel="stylesheet" href="extra_static/pangeo-style.css" type="text/css" media="all">
 {% endblock head %}
 
+{% block logo_image %}extra_static/pangeo_simple_logo.svg{% endblock %}
+
 {% block main %}
 <div id="main" class="container">
   <div class="row">
     <!--<h4 class="text-center logo-subtext">(beta)</h4>-->
     <div class="col-lg-10 col-lg-offset-1">
       {% block header %}
-      <img alt="extra_static/pangeo_simple_logo.svg" src="extra_static/pangeo_simple_logo.svg" width="175px">
       <div id="header" class="text-center">
         <h3>Turn a GitHub repo into a collection of interactive notebooks</h3>
         <div id="explanation">
-          Have a repository full of Jupyter notebooks that use dask to perform scalable computations? With Pangeo-Binder, open those notebooks in an executable environment, launch a dask cluster, access datasets stored on the commercial cloud, and make your code immediately reproducible by anyone, anywhere. 
+          Have a repository full of Jupyter notebooks that use dask to perform scalable computations? With Pangeo-Binder, open those notebooks in an executable environment, launch a dask cluster, access datasets stored on the commercial cloud, and make your code immediately reproducible by anyone, anywhere.
         </div>
       </div>
       {% endblock header %}
