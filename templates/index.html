@@ -3,7 +3,7 @@
 {% block head %}
 <meta id="base-url" data-url="{{base_url}}">
 <script src="{{static_url("dist/bundle.js")}}"></script>
-<link rel="stylesheet" href="{{static_url("pangeo-style.css")}}" type="text/css" media="all">
+<link rel="stylesheet" href="extra_static/pangeo-style.css" type="text/css" media="all">
 {{ super() }}
 {% endblock head %}
 
@@ -13,6 +13,7 @@
     <!--<h4 class="text-center logo-subtext">(beta)</h4>-->
     <div class="col-lg-10 col-lg-offset-1">
       {% block header %}
+      <img alt="extra_static/pangeo_simple_logo.svg" src="extra_static/pangeo_simple_logo.svg" width="175px">
       <div id="header" class="text-center">
         <h3>Turn a GitHub repo into a collection of interactive notebooks</h3>
         <div id="explanation">
