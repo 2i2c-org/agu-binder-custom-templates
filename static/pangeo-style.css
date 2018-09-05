@@ -24,10 +24,6 @@ h1 {
   margin-bottom: 50px;
 }
 
-.welcome h1 {
-  font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif
-}
-
 h2 {
   font-family: "Panton Light Caps";
 }
@@ -35,6 +31,10 @@ h2 {
 body {
   font-size: 1.7rem;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#how-it-works, #explanation {
+  font-weight: initial;
 }
 
 a {
@@ -46,13 +46,9 @@ a:hover, a:focus {
   color: #5eb130;
 }
 
-.alert-info, mark {
-  color: white;
-  background-color: #00a3b0;
-}
-
-.alert-info a {
-  color: #322173;
+/* Restore blue color of dropdown link */
+.bluedropdown a {
+  color: #337ab7;
 }
 
 .navbar-inverse {
@@ -79,25 +75,6 @@ a:hover, a:focus {
   font-family: "Panton Black Caps";
 }
 
-#pangeo h1 {
-  visibility: hidden;
-  margin-bottom: 0;
-}
-
-#pangeo img {
-  display: block;
-  margin: 0 auto;
-}
-
-.welcome h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.welcome h2 {
-  text-align: center;
-}
-
 h2 {
   margin-top: 50px;
 }
@@ -106,17 +83,26 @@ h3 {
   margin-top: 30px;
 }
 
-#pangeo-packages img {
-  float: right;
-  margin: 5px;
+#acknowledgments .row {
+  margin-bottom: 30px;
 }
 
-
-#pangeo-packages h2, h3 {
-    clear: both;
+.point-teal {
+  border-color: #00a3b0;
+  color: #00a3b0;
 }
 
-/* things for the custom people table */
-.icon {
+.point-blue {
+  border-color: #003B71;
   color: #003B71;
+}
+
+.point-green {
+  border-color: #5eb130;
+  color: #5eb130;
+}
+
+.point-purple {
+  border-color: #322173;
+  color: #322173;
 }
