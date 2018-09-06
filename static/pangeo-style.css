@@ -1,0 +1,108 @@
+/* colors from brand sheet
+  dark blue:  #003B71
+  green:      #5eb130
+  teal:       #00a3b0
+  purple:     #322173
+  pink:       #e50051
+*/
+
+@font-face {
+    font-family: "Panton Black Caps";
+    /* src: url("http://ff.cdn.1001fonts.net/p/a/panton.black-caps.otf") */
+    src: url("panton.black-caps.otf");
+}
+
+@font-face {
+    font-family: "Panton Light Caps";
+    src: url("panton.light-caps.otf");
+}
+
+h1 {
+  color: #003B71;
+  font-family: "Panton Black Caps";
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Panton Light Caps";
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#how-it-works, #explanation {
+  font-weight: initial;
+}
+
+a {
+  color: #5eb130;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #5eb130;
+}
+
+/* Restore blue color of dropdown link */
+.bluedropdown a {
+  color: #337ab7;
+}
+
+.navbar-inverse {
+  background: -webkit-linear-gradient(left, #5eb130, #003B71); /* Chrome10+, Safari5.1+ */
+  background: linear-gradient(left, #5eb130, #003B71);
+  border: None;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #00a3b0;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus  {
+    background-color: #00a3b0;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    /* color: #ffffff; */
+    background-color: #00a3b0;
+}
+
+.navbar-brand {
+  font-family: "Panton Black Caps";
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+#acknowledgments .row {
+  margin-bottom: 30px;
+}
+
+.point-teal {
+  border-color: #00a3b0;
+  color: #00a3b0;
+}
+
+.point-blue {
+  border-color: #003B71;
+  color: #003B71;
+}
+
+.point-green {
+  border-color: #5eb130;
+  color: #5eb130;
+}
+
+.point-purple {
+  border-color: #322173;
+  color: #322173;
+}

@@ -10,12 +10,18 @@
 </head>
 <body>
   {% block body %}
+  {% block navbar %}
+  <div id="navbar" class="navbar navbar-inverse navbar-default">
+  </div>
+  {% endblock navbar %}
 
   {% block logo %}
   <div class="container">
     <div class="row">
       <div id="logo-container">
-        <img id="logo" src={% block logo_image %}"{{static_url("logo.svg")}}"{% endblock logo_image %} width="390px"  />
+        <img id="logo" src={% block logo_image %}"extra_static/pangeo_simple_logo.svg"{% endblock logo_image %} width="390px"  />
+        <br>
+        <img src="{{static_url("logo.svg")}}" width="145px"  />
       </div>
     </div>
   </div>
@@ -25,14 +31,27 @@
   {% endblock main %}
 
   {% block footer %}
-  <div class="container">
+  <div id="acknowledgments" class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <a href="https://pangeo.io">Pangeo</a> is a community effort for big data geoscience.
+        This <a href="https://binderhub.readthedocs.io/">BinderHub</a> is a multi-user server for interactive data analysis running on <a href="https://cloud.google.com/">Google Cloud Platform</a>.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h4>Acknowledgments</h4>
+        Pangeo is supported, in part, by the <a href="https://www.nsf.gov/">National Science Foundation (NSF)</a> and the <a href="https://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a>.
+        Google provided compute credits on Google Compute Engine.
+      </div>
+    </div>
     <div class="row text-center">
-      <table style="width:100%">
-        <tr>
-          <td><center><h4>questions about binder? <br> join the <a href="https://gitter.im/jupyterhub/binder">chat</a>, read the <a href="https://mybinder.readthedocs.io/en/latest/">docs</a>, see the <a href="https://github.com/jupyterhub/binderhub">code</a></h4></center></td>
-          <td><center><h4>questions about pangeo? <br> join the <a href="https://gitter.im/pangeo-data/Lobby">chat</a>, read the <a href="https://pangeo.io">docs</a>, see the <a href="https://github.com/pangeo-data/pangeo">code</a></h4></center></td>
-        </tr>
-      </table>
+      <div class="col-md-6">
+        <h4>questions about binder? <br> join the <a href="https://gitter.im/jupyterhub/binder">chat</a>, read the <a href="https://mybinder.readthedocs.io/en/latest/">docs</a>, see the <a href="https://github.com/jupyterhub/binderhub">code</a></h4>
+      </div>
+      <div class="col-md-6">
+        <h4>questions about pangeo? <br> join the <a href="https://gitter.im/pangeo-data/Lobby">chat</a>, read the <a href="https://pangeo.io">docs</a>, see the <a href="https://github.com/pangeo-data/pangeo">code</a></h4>
+      </div>
     </div>
   </div>
   {% endblock footer %}
