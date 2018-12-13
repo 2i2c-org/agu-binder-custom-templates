@@ -5,7 +5,7 @@
   {% block head %}
   <link id="favicon" rel="shortcut icon" type="image/png" href="{{static_url("favicon.ico")}}" />
   <link href="{{static_url("dist/styles.css")}}" rel="stylesheet"></link>
-
+  <link rel="stylesheet" href="/extra_static/pangeo-style.css" type="text/css" media="all">
   {% endblock head %}
 </head>
 <body>
@@ -19,7 +19,7 @@
   <div class="container">
     <div class="row">
       <div id="logo-container">
-        <img id="logo" src={% block logo_image %}"extra_static/pangeo_simple_logo.svg"{% endblock logo_image %} width="390px"  />
+        <img id="logo" src={% block logo_image %}"/extra_static/pangeo_simple_logo.svg"{% endblock logo_image %} width="390px" />
         <br>
         <img src="{{static_url("logo.svg")}}" width="145px"  />
       </div>
