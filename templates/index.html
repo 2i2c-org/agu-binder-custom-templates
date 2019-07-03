@@ -2,6 +2,7 @@
 
 {% block head %}
 <meta id="base-url" data-url="{{base_url}}">
+<meta id="badge-base-url" data-url="{{badge_base_url}}">
 <script src="{{static_url("dist/bundle.js")}}"></script>
 {{ super() }}
 {% endblock head %}
@@ -12,9 +13,9 @@
     <div class="col-lg-10 col-lg-offset-1">
       {% block header %}
       <div id="header" class="text-center">
-        <h3>Turn a GitHub repo into a collection of interactive notebooks</h3>
+        <h3>Turn a Git repo into a collection of interactive notebooks</h3>
         <div id="explanation">
-          Have a repository full of Jupyter notebooks that use dask to perform scalable computations? With Pangeo-Binder, open those notebooks in an executable environment, launch a dask cluster, access datasets stored on the commercial cloud, and make your code immediately reproducible by anyone, anywhere.
+          Have a repository full of Jupyter notebooks that use Dask to perform scalable computations? With Pangeo-Binder, open those notebooks in an executable environment, launch a Dask-Kubernetes cluster, access datasets stored on the cloud, and make your code immediately reproducible by anyone, anywhere.
         </div>
       </div>
       {% endblock header %}
@@ -85,7 +86,7 @@
 
         <!--url section-->
         <div class="url row">
-            <div class="bluedropdown">
+            <div class="dropdownmenu">
               <label>Copy the URL below and share your Binder with others:</label>
             </div>
             <div class="url-row">
@@ -95,8 +96,8 @@
         </div>
 
         <div class="badges row">
-            <div class="bluedropdown" id="toggle-badge-snippet">
-              <label>Copy the text below, then paste into your README to show a binder badge: <img id="badge" src="{{static_url("images/badge.svg")}}"></label>
+            <div class="dropdownmenu" id="toggle-badge-snippet">
+              <label>Copy the text below, then paste into your README to show a binder badge: <img id="badge" src="{{static_url("images/badge_logo.svg")}}"></label>
               <a id="badge-link"></a>
               <a href="#" title="show badge snippets"><span id="badge-snippet-caret" class="glyphicon glyphicon-triangle-right"></span></a>
             </div>
@@ -161,7 +162,7 @@
 
     <div class="row">
       <div class="col-md-1 col-md-offset-2 point-container">
-        <span class="point point-green">1</span>
+        <span class="point point-orange">1</span>
       </div>
       <div class="col-md-7 front">
         <span class="front-em">Enter your repository information</span><br />Provide in the above form a URL or a GitHub repository that contains Jupyter notebooks, as well as a branch, tag, or commit hash. Launch will build your Binder repository. If you specify a path to a notebook file, the notebook will be opened in your browser after building.
@@ -170,7 +171,7 @@
 
     <div class="row">
       <div class="col-md-1 col-md-offset-2 point-container">
-        <span class="point point-teal">2</span>
+        <span class="point point-red">2</span>
       </div>
       <div class="col-md-7 front">
         <span class="front-em">We build a Docker image of your repository</span><br />Binder will search for a dependency file, such as requirements.txt or environment.yml, in the repository's root directory (<a href="https://pangeo-binder.readthedocs.io/en/latest/">more details on more complex dependencies in documentation</a>). The dependency files will be used to build a Docker image. If an image has already been built for the given repository, it will not be rebuilt. If a new commit has been made, the image will automatically be rebuilt.
