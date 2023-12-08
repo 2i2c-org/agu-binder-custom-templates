@@ -1,0 +1,107 @@
+/* colors from 2i2c Brand Book
+  dark blue:  #003B71
+  green:      #5eb130
+  teal:       #00a3b0
+  purple:     #322173
+  pink:       #e50051
+
+  core colors:
+  black:       #000000
+  big blue:    #1d4ef5
+  pale blue    #f2f5fc
+
+  secondary colors
+  midnight:    #230344
+  mauve:       #be6bfc
+  forest:      #057761
+  light green: #0cefae
+  magenta:     #c60a76
+  pink:        #ff808b
+  coral:       #ff4e4f
+  yellow:      #ffde17
+*/
+
+@font-face {
+    font-family: "Poppins";
+    src:
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: 
+}
+
+@font-face {
+    font-family: "Playfair Light";
+    src:
+}
+
+h1 {
+  color: #003B71;
+  font-family: "Poppins";
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: "Work Sans";
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+body {
+  font-size: 1.7rem;
+  font-family: "Work Sans";
+}
+
+#how-it-works, #explanation {
+  font-weight: initial;
+}
+
+a {
+  color: #1d4ef5;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #1d4ef5;
+}
+
+/* Restore blue color of dropdown link */
+.bluedropdown a {
+  color: #f2f5fc;
+}
+
+.navbar-inverse {
+  background: -webkit-linear-gradient(left, #f2f5fc, #1d4ef5); /* Chrome10+, Safari5.1+ */
+  background: linear-gradient(left, #f2f2fc, #1d4ef5);
+  border: None;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    background-color: #f2f5fc;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus  {
+    background-color: #f2f5fc;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    /* color: #ffffff; */
+    background-color: #f2f5fc;
+}
+
+.navbar-brand {
+  font-family: "Poppins";
+}
+
+#acknowledgments .row {
+  margin-bottom: 30px;
+}

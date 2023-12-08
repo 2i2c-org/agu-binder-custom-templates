@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}Pangeo Binder (beta){% endblock %}</title>
+  <title>{% block title %}2i2c Binder{% endblock %}</title>
   {% block head %}
   <link id="favicon" rel="shortcut icon" type="image/png" href="{{static_url("favicon.ico")}}" />
   <link href="{{static_url("dist/styles.css")}}" rel="stylesheet"></link>
-  <link rel="stylesheet" href="/extra_static/pangeo-style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/extra_static/2i2c-style.css" type="text/css" media="all">
   {% endblock head %}
 </head>
 <body>
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row">
       <div id="logo-container">
-        <img id="logo" src={% block logo_image %}"/extra_static/pangeo_simple_logo.svg"{% endblock logo_image %} width="390px" />
+        <img id="logo" src={% block logo_image %}"/extra_static/banner.svg"{% endblock logo_image %} width="100%" />
         <br>
         <img src="{{static_url("logo.svg")}}" width="145px"  />
       </div>
@@ -42,22 +42,21 @@
         <h4>questions about binder? <br> join the <a href="https://gitter.im/jupyterhub/binder">chat</a>, read the <a href="https://mybinder.readthedocs.io/en/latest/">docs</a>, see the <a href="https://github.com/jupyterhub/binderhub">code</a></h4>
       </div>
       <div class="col-md-6">
-        <h4>questions about pangeo? <br> join the <a href="https://gitter.im/pangeo-data/Lobby">chat</a>, read the <a href="https://pangeo.io">docs</a>, see the <a href="https://github.com/pangeo-data/pangeo">code</a></h4>
+        <h4>questions about 2i2c? <br> visit our <a href="https://2i2c.org">web site</a> or email <a href="mailto://hello@2i2c.org">hello@2i2c.org</a></h4>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
-        <a href="https://pangeo.io">Pangeo</a> is a community effort for big data geoscience.
+        <a href="https://2i2c.org">2i2c</a> is a non-profit with a mission to advance open science with cloud based interactive computing.
         This <a href="https://binderhub.readthedocs.io/">BinderHub</a> is a multi-user server for interactive data analysis running on <a href="https://cloud.google.com/">Google Cloud Platform</a>.
       </div>
     </div>
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1">
         <h4>Acknowledgments</h4>
-        Pangeo is supported, in part, by the <a href="https://www.nsf.gov/">National Science Foundation (NSF)</a> and the <a href="https://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a>.
-        Google provided compute credits on Google Compute Engine.
+        2i2c is supported, in part, by the <a href="https://www.nsf.gov/">National Science Foundation (NSF)</a> and the <a href="https://www.nasa.gov/">National Aeronautics and Space Administration (NASA)</a>.
         <p>
-        Special thanks to the <a href="http://jupyter.org/index.html">Jupyter</a> and <a href="https://binderhub.readthedocs.io/">Binder</a> teams for their help in building and deploying Pangeo-Binder.
+        Special thanks to the <a href="http://jupyter.org/index.html">Jupyter</a> and <a href="https://binderhub.readthedocs.io/">Binder</a> teams for their help in building and deploying this Binder.
       </div>
     </div>
   </div>
